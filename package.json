@@ -1,0 +1,35 @@
+{
+  "name": "sport-reminder",
+  "displayName": "Sport reminder",
+  "description": "Extension reminds you to do sport at 9 PM with opening a YOUTUBE workout.",
+  "version": "0.0.1",
+  "publisher": "alishashelby",
+  "repository": "https://github.com/alishashelby/SportReminderPlagin",
+  "engines": {
+      "vscode": "^1.50.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+      "commands": [
+          {
+            "command": "extension.sportReminder",
+            "title": "SportReminder"
+          }
+      ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.50.0",
+    "typescript": "^4.0.3",
+    "vscode": "^1.1.37"
+  }
+}
